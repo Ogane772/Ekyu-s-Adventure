@@ -1,0 +1,14 @@
+# Blender MTL File: 'Stalags.blend'
+# Material Count: 1
+
+newmtl stalags.001
+Ns 223.529412
+Ka 1.000000 1.000000 1.000000
+Kd 0.397693 0.405653 0.347399
+Ks 0.108179 0.105249 0.072966
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\free_mine_assets\textures\rock1.png
+map_Ks C:\\Users\\oreng\\Documents\\エクスポートするやつ\\free_mine_assets\\rock1_spec.png

@@ -1,0 +1,24 @@
+# Blender MTL File: 'SignsUpload.blend'
+# Material Count: 2
+
+newmtl Material
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\Texture\SignContent1.jpg
+
+newmtl RustedMetal
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.047368 0.047368 0.047368
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\Texture\Rusted Metal.jpg

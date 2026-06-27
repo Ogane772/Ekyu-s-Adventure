@@ -1,0 +1,24 @@
+# Blender MTL File: 'grass_pillar.blend'
+# Material Count: 2
+
+newmtl Fbx_Default_Material
+Ns 92.156863
+Ka 1.000000 1.000000 1.000000
+Kd 0.576000 0.576000 0.576000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\Directx11Map\firstmap\jungle_mntn_d.jpg
+
+newmtl Fbx_Default_Material_tileable-img_0062-dark.png
+Ns 92.156863
+Ka 1.000000 1.000000 1.000000
+Kd 0.576000 0.576000 0.576000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\Directx11Map\firstmap\tilable-img_0044-lush.png

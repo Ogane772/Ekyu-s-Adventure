@@ -1,0 +1,2 @@
+DirectX エンド ユーザー ランタイム Web インストーラを入れてください
+https://www.microsoft.com/ja-jp/download/details.aspx?id=35

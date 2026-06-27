@@ -1,0 +1,49 @@
+# Blender MTL File: 'Wooden3.blend'
+# Material Count: 4
+
+newmtl light.001
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.615892 0.358271
+Ks 0.500000 0.487551 0.268868
+Ke 0.214400 0.206324 0.120021
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\oreng\\Documents\\エクスポートするやつ\\free_mine_assets\\light.png
+
+newmtl metal.004
+Ns 137.254902
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.544285 0.395941
+Ks 0.162791 0.121144 0.073060
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\free_mine_assets\textures\iron_diffuse.png
+map_Bump C:\\Users\\oreng\\Documents\\エクスポートするやつ\\free_mine_assets\\textures\\iron_normal.png
+
+newmtl wood
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.349686 0.086319
+Ks 0.220930 0.164410 0.099153
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\free_mine_assets\textures\wood1.png
+map_Bump C:\\Users\\oreng\\Documents\\エクスポートするやつ\\free_mine_assets\\textures\\wood1_norm.png
+
+newmtl wood.005
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.349686 0.086319
+Ks 0.220930 0.164410 0.099153
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\free_mine_assets\textures\wood1.png
+map_Bump C:\\Users\\oreng\\Documents\\エクスポートするやつ\\free_mine_assets\\wood1.png
