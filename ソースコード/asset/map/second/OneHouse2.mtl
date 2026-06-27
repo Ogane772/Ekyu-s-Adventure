@@ -1,0 +1,46 @@
+# Blender MTL File: 'OneHouse2.blend'
+# Material Count: 4
+
+newmtl Plaster
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.026316 0.026316 0.026316
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\Texture\GreyBricks.jpg
+
+newmtl Plaster_Plaster.jpg
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.026316 0.026316 0.026316
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\Texture\Plaster.jpg
+
+newmtl RoofTiles
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.002039 0.002039 0.002039
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\Texture\RoofTiles.jpg
+
+newmtl Wood
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.075701 0.033259 0.012597
+Ks 0.000275 0.000105 0.000070
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\oreng\Documents\エクスポートするやつ\Texture\Wood.jpg

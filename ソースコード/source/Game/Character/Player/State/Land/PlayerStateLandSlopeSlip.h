@@ -1,0 +1,17 @@
+#pragma once
+#include "../PlayerStateBase.h"
+enum class EPlayerStateType : int;
+
+class CPlayerStateLandSlopeSlip : public CPlayerStateBase
+{
+public:
+	CPlayerStateLandSlopeSlip(CPlayer* InOwner) : CPlayerStateBase(InOwner) {};
+	virtual void Enter() override;
+
+	virtual EPlayerStateType Update(const float DeltaTime) override;
+
+	virtual void Exit() override;
+
+private:
+	bool IsCheckGroundSlipAnimation = false;
+};
