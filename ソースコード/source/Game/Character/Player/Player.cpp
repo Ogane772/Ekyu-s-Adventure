@@ -229,6 +229,9 @@ void CPlayer::Init()
 	{
 		m_StateMachine->ChangeState(EPlayerStateType::LAND_IDLE);
 	}
+	//生成と同時にイベントが設定された場合、モデルの描画情報が正しく設定されないため一度空回しを行う
+	UpdateVector();
+	Draw();
 }
 
 void CPlayer::UnInit()
