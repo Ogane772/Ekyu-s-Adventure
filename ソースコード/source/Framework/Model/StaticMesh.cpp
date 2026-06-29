@@ -397,6 +397,10 @@ CStaticMesh::CStaticMesh(const EStaticMeshType Type)
 	m_MeshType = Type;
 	for (StaticMeshData* mesh : m_LoadMeshList)
 	{
+		if (!mesh)
+		{
+			continue;
+		}
 		if (m_MeshType == mesh->ModelIndex)
 		{
 			isLoadModel = true;
@@ -1036,6 +1040,10 @@ std::vector<CollisionMesh>* CStaticMesh::GetNormalModelMeshCollision()
 
 void CStaticMesh::CreateCollisionMesh()
 {
+	if (!m_Mesh)
+	{
+		return;
+	}
 	m_CollisionMeshList.clear();
 	//コリジョンメッシュに頂点情報と法線を格納する
 	float maxRad = 0.0f;	

@@ -565,6 +565,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 		return;
 	}
 	const char* lineDataChar = LineData.c_str();
+	if (!lineDataChar)
+	{
+		return;
+	}
 	CMouseCursor* mouse = sceneManager->GetMouseCursor();
 	sscanf_s(lineDataChar, "%d", &m_SaveData.ObjectType);
 	switch (m_SaveData.ObjectType)
@@ -578,7 +582,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 				return;;
 			}
 			scene.lock()->AddGameObject<CAcorn>(ESceneObjectType::BILLBOARD, acorn);
-			mouse->PushMapObject(acorn, "Acorn", EStaticMeshType::SPHERE, EEditorSelectObjectType::ACORN);
+			if (mouse)
+			{
+				mouse->PushMapObject(acorn, "Acorn", EStaticMeshType::SPHERE, EEditorSelectObjectType::ACORN);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::HEART:
@@ -593,7 +600,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 				return;;
 			}
 			scene.lock()->AddGameObject<CHeart>(ESceneObjectType::NOMESH_OBJECT, heart);
-			mouse->PushMapObject(heart, "Heart", EStaticMeshType::HEART , EEditorSelectObjectType::HEART);
+			if (mouse)
+			{
+				mouse->PushMapObject(heart, "Heart", EStaticMeshType::HEART, EEditorSelectObjectType::HEART);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::STAR:
@@ -608,7 +618,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 				return;;
 			}
 			scene.lock()->AddGameObject<CStar>(ESceneObjectType::NOMESH_OBJECT, star);
-			mouse->PushMapObject(star, "Star", EStaticMeshType::STAR, EEditorSelectObjectType::STAR);
+			if (mouse)
+			{
+				mouse->PushMapObject(star, "Star", EStaticMeshType::STAR, EEditorSelectObjectType::STAR);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::STAR_DOOR:
@@ -624,7 +637,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			}
 			stardoor->SetStarTexture();
 			scene.lock()->AddGameObject<CStarDoor>(ESceneObjectType::MESH_OBJECT, stardoor);
-			mouse->PushMapObject(stardoor, "StarDoor", EStaticMeshType::STAR_DOOR, EEditorSelectObjectType::STAR_DOOR);
+			if (mouse)
+			{
+				mouse->PushMapObject(stardoor, "StarDoor", EStaticMeshType::STAR_DOOR, EEditorSelectObjectType::STAR_DOOR);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::COMMON:
@@ -640,10 +656,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 				&m_SaveData.NormalPower, &m_SaveData.NormalSpecular,
 				&m_SaveData.SphereRadius, &m_SaveData.SpherePosition.x, &m_SaveData.SpherePosition.y, &m_SaveData.SpherePosition.z, &m_SaveData.NoCullingCheck, &m_SaveData.EditorOnlyDraw, &m_SaveData.CameraCollisionTag
 				, &m_SaveData.EnableNormalMap, &m_SaveData.EnableLight, &m_SaveData.DisableDepth,&m_SaveData.StepsCollisionTag,&m_SaveData.DisableSelfShadow);
-			CCommonObject *common = new CCommonObject();
+			CCommonObject* common = new CCommonObject();
 			if (!common)
 			{
-				return;;
+				return;
 			}
 			common->Init(m_SaveData.StaticMeshType, m_SaveData.Position, Vector3(m_SaveData.Scale), Vector3(m_SaveData.Rotation));
 			common->SetPlayerCollisionTag(m_SaveData.PlayerCollisionTag);
@@ -662,11 +678,16 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			cons.NormalPower.x = m_SaveData.NormalPower;
 			cons.SpecularPower.x = m_SaveData.NormalSpecular;
 			common->SetNormalMapPower(cons);
-			MATERIAL* material = common->GetMaterial();
-			m_SaveData.Material.Alpha.r = 1.0f;
-			*material = m_SaveData.Material;
+			if (MATERIAL* material = common->GetMaterial())
+			{
+				m_SaveData.Material.Alpha.r = 1.0f;
+				*material = m_SaveData.Material;
+			}
 			scene.lock()->AddGameObject<CCommonObject>(ESceneObjectType::MESH_OBJECT, common);
-			mouse->PushMapObject(common, CStaticMesh::GetModelFileName(m_SaveData.StaticMeshType), m_SaveData.StaticMeshType, EEditorSelectObjectType::COMMON);
+			if (mouse)
+			{
+				mouse->PushMapObject(common, CStaticMesh::GetModelFileName(m_SaveData.StaticMeshType), m_SaveData.StaticMeshType, EEditorSelectObjectType::COMMON);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::NO_CLIFFBOX:
@@ -682,7 +703,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			}
 			cliffbox->GetCollisionBox()->AddBoxPosition(m_SaveData.BoxPosition);
 			scene.lock()->AddGameObject<CNoCliffBox>(ESceneObjectType::NOMESH_OBJECT, cliffbox);
-			mouse->PushMapObject(cliffbox, "NoCliffBox", EStaticMeshType::BOX, EEditorSelectObjectType::NO_CLIFFBOX);
+			if (mouse)
+			{
+				mouse->PushMapObject(cliffbox, "NoCliffBox", EStaticMeshType::BOX, EEditorSelectObjectType::NO_CLIFFBOX);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::CAMERA_HEIGHTLOCK_BOX:
@@ -699,7 +723,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			camerabox->GetCollisionBox()->AddBoxPosition(m_SaveData.BoxPosition);
 			camerabox->SetHeightLockPosition(m_SaveData.HeightLockPosition);
 			scene.lock()->AddGameObject<CCameraHeightLockBox>(ESceneObjectType::NOMESH_OBJECT, camerabox);
-			mouse->PushMapObject(camerabox, "CameraBox", EStaticMeshType::BOX, EEditorSelectObjectType::CAMERA_HEIGHTLOCK_BOX);
+			if (mouse)
+			{
+				mouse->PushMapObject(camerabox, "CameraBox", EStaticMeshType::BOX, EEditorSelectObjectType::CAMERA_HEIGHTLOCK_BOX);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::TUTORIAL_BOX:
@@ -716,7 +743,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			tutorialbox->GetCollisionBox()->AddBoxPosition(m_SaveData.BoxPosition);
 			tutorialbox->SetTutorialNumber(m_SaveData.TutorialNumber);
 			scene.lock()->AddGameObject<CTutorialBox>(ESceneObjectType::NOMESH_OBJECT, tutorialbox);
-			mouse->PushMapObject(tutorialbox, "TutorialBox", EStaticMeshType::BOX, EEditorSelectObjectType::TUTORIAL_BOX);
+			if (mouse)
+			{
+				mouse->PushMapObject(tutorialbox, "TutorialBox", EStaticMeshType::BOX, EEditorSelectObjectType::TUTORIAL_BOX);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::PLAYER_START:
@@ -728,7 +758,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 				return;;
 			}
 			scene.lock()->AddGameObject<CPlayerStart>(ESceneObjectType::NOMESH_OBJECT, start);
-			mouse->PushMapObject(start, "PlayerStart", EStaticMeshType::PLAYER_START, EEditorSelectObjectType::PLAYER_START);
+			if (mouse)
+			{
+				mouse->PushMapObject(start, "PlayerStart", EStaticMeshType::PLAYER_START, EEditorSelectObjectType::PLAYER_START);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::SLIME:
@@ -773,7 +806,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			item.Percent = m_SaveData.ItemDrop.Percent;
 			enemy->SetItemDropData(item);
 			scene.lock()->AddGameObject<CEnemy>(ESceneObjectType::ENEMY, enemy);
-			mouse->PushMapObject(enemy, "Slime", EStaticMeshType::SLIME, EEditorSelectObjectType::SLIME);
+			if (mouse)
+			{
+				mouse->PushMapObject(enemy, "Slime", EStaticMeshType::SLIME, EEditorSelectObjectType::SLIME);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::MONKEY:
@@ -800,7 +836,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			item.Percent = m_SaveData.ItemDrop.Percent;
 			enemy->SetItemDropData(item);
 			scene.lock()->AddGameObject<CEnemy>(ESceneObjectType::ENEMY, enemy);
-			mouse->PushMapObject(enemy, "Monkey", EStaticMeshType::MONKEY, EEditorSelectObjectType::MONKEY);
+			if (mouse)
+			{
+				mouse->PushMapObject(enemy, "Monkey", EStaticMeshType::MONKEY, EEditorSelectObjectType::MONKEY);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::THORNMAN:
@@ -833,7 +872,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			item.Percent = m_SaveData.ItemDrop.Percent;
 			enemy->SetItemDropData(item);
 			scene.lock()->AddGameObject<CEnemy>(ESceneObjectType::ENEMY, enemy);
-			mouse->PushMapObject(enemy, "ThornMan", EStaticMeshType::THORNMAN, EEditorSelectObjectType::THORNMAN);
+			if (mouse)
+			{
+				mouse->PushMapObject(enemy, "ThornMan", EStaticMeshType::THORNMAN, EEditorSelectObjectType::THORNMAN);
+			}
 			break;
 		}
 		case EEditorSelectObjectType::FOG:
@@ -846,7 +888,10 @@ void CSaveAndLoad::ObjectLoad(std::string& LineData)
 			break;
 		}
 	}
-	mouse->SetCreateNumber(-1);
+	if (mouse)
+	{
+		mouse->SetCreateNumber(-1);
+	}
 }
 
 void CSaveAndLoad::SatBoxData(CBox* Box)
