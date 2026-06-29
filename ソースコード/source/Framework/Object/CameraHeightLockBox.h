@@ -1,7 +1,7 @@
 #pragma once
+//プレイヤーが触れた際カメラに対して高さ制限を行うボックス
 #include "../GameObject/GameObject.h"
 #include <memory>
-//プレイヤーが触れた際カメラに対して高さ制限を行うボックス
 
 class CBox;
 

@@ -1,4 +1,5 @@
 ﻿#pragma once
+//動画の再生を行うクラス
 #include <mfobjects.h>
 #include <mfidl.h>
 #include <memory>

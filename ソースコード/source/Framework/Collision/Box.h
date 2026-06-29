@@ -1,4 +1,5 @@
 #pragma once
+//コリジョンに使用するBoxクラス(OBB)
 #include <memory>
 #include "../GameObject/GameObject.h"
 #include "../Model/StaticMesh.h"

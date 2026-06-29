@@ -1,4 +1,5 @@
 #pragma once
+//ステージクリアに必要なスターを表示するドアクラス
 #include <vector>
 #include "../../../Framework/GameObject/GameObject.h"
 #include "../../../Framework/Time/TimeScheduler.h"

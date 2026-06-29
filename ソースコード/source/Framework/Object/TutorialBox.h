@@ -1,8 +1,10 @@
 #pragma once
+//プレイヤーが触れたとき、チュートリアル番号に応じたチュートリアルを表示するボックス
 #include "../GameObject/GameObject.h"
 #include <memory>
-//プレイヤーが触れたとき、チュートリアル番号に応じたチュートリアルを表示するボックス
+
 class CBox;
+
 class CTutorialBox : public CGameObject
 {
 private:

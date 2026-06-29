@@ -1,4 +1,5 @@
 #pragma once
+//コリジョンに使用するカプセルクラス
 #include "../GameObject/GameObject.h"
 #include <d3d11.h>
 struct VERTEX_3D;

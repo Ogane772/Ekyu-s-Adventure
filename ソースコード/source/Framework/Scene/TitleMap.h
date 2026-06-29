@@ -1,4 +1,5 @@
 #pragma once
+//タイトルマップ
 #include "../Scene/Scene.h"
 class CDemoPlayer;
 class C2DPolygon;

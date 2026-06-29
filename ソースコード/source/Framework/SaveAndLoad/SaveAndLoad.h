@@ -1,4 +1,5 @@
 #pragma once
+//マップ上に配置されたオブジェクトのセーブ、ロード等を行うクラス
 #include <vector>
 #include <string>
 #include <unordered_map>

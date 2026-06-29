@@ -1,4 +1,5 @@
 #pragma once
+//キーボードによる入力を管理するクラス
 #include <Windows.h>
 
 class CInput

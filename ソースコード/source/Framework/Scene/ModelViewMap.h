@@ -1,4 +1,5 @@
 #pragma once
+//モデルビューモードのマップクラス
 #include "../Scene/Scene.h"
 class CViewModel;
 

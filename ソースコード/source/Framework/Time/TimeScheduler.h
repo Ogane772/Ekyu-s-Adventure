@@ -1,11 +1,12 @@
 #pragma once
+//特定の時間到達時に登録した関数を実行するクラス
 #include <iostream>
 #include <vector>
 #include <thread>
 #include <chrono>
 #include <functional>
 #include <algorithm>
-//特定の時間到達時に登録した関数を実行するクラス
+
 class CTimeScheduler 
 {
 public:

@@ -1,4 +1,5 @@
 #pragma once
+//雑魚敵のトゲマンクラス
 #include "../MobEnemy.h"
 #include "../../../../../Framework/State/FunctionStateMachine.h"
 

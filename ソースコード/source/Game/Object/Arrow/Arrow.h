@@ -1,4 +1,5 @@
 #pragma once
+//ボスがスタン時に使用する回転する矢印モデルクラス
 #include <memory>
 #include "../../../Framework/GameObject/GameObject.h"
 class CStaticMesh;

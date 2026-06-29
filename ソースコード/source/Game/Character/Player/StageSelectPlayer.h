@@ -1,6 +1,7 @@
 #pragma once
+//ステージセレクトで使用するプレイヤー
 #include "../Character.h"
-//ステージセレクトで表示するプレイヤー
+
 struct AnimationData;
 enum class EPlayerAnimationNumber;
 

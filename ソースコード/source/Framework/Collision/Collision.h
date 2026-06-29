@@ -1,4 +1,5 @@
 #pragma once
+//各コリジョン判定を行うクラス
 #include "../Calculation/Vector.h"
 #include <vector>
 using namespace FrameWork;

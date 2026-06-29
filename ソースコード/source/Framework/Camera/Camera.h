@@ -1,5 +1,5 @@
 #pragma once
-
+//ƒJƒƒ‰ƒNƒ‰ƒX
 #include "../GameObject/GameObject.h"
 #include "../State/FunctionStateMachine.h"
 #include "../Line/Line.h"

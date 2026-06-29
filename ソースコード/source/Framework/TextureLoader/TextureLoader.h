@@ -1,4 +1,5 @@
 #pragma once
+//テクスチャの読み込みや管理を行うクラス
 #include <d3d11.h>
 #include <string>
 #include <memory>

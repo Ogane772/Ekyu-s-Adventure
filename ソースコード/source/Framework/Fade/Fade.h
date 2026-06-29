@@ -1,4 +1,5 @@
 #pragma once
+//フェードクラス 通常のフェードと円形のフェードを行う
 #include "../Singleton/Singleton.h"
 #include "../Polygon/2DPolygon/2DPolygon.h"
 #include <memory>

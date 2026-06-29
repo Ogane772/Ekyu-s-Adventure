@@ -1,4 +1,5 @@
 #pragma once
+//フレーム時間等の時間を管理するクラス
 #pragma comment(lib, "winmm.lib")
 
 #include <windows.h>

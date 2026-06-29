@@ -1,4 +1,5 @@
 #pragma once
+//各サウンドを管理するクラス
 #include "../Singleton/Singleton.h"
 #include "../Calculation/Vector.h"
 #include <xaudio2.h>

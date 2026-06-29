@@ -1,4 +1,5 @@
 #pragma once
+//各種シーンの親クラス
 #include <typeinfo>
 #include <vector>
 #include <string>

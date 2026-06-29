@@ -1,8 +1,8 @@
 #pragma once
+//プレイヤーが触れている時、崖掴みをできなくするボックス
 #include "../GameObject/GameObject.h"
 #include <memory>
 
-//プレイヤーが触れている時、崖掴みをできなくするボックス
 class CBox;
 class CNoCliffBox : public CGameObject
 {

@@ -1,4 +1,5 @@
 #pragma once
+//ステージセレクトマップ
 #include "../Scene/Scene.h"
 
 class CStageSelectPlayer;

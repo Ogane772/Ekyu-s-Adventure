@@ -1,4 +1,5 @@
 #pragma once
+//プレイヤーが拾うドングリクラス
 #include "../../../Framework/GameObject/GameObject.h"
 
 class CSphere;

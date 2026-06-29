@@ -1,4 +1,5 @@
 #pragma once
+//コリジョンに使用する球クラス
 #include "../GameObject/GameObject.h"
 #include "../Model/StaticMesh.h"
 

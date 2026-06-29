@@ -1,4 +1,5 @@
 #pragma once
+//float型をまとめた各種座標等の設定に用いるクラス
 #include <DirectXMath.h>
 #include <cmath>
 using namespace DirectX;

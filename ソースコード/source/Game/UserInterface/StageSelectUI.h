@@ -1,4 +1,5 @@
 #pragma once
+//ステージセレクトマップで使用するUI
 #include "../../Framework/GameObject/SceneObject.h"
 #include "../../Framework/Calculation/Vector.h"
 #include <unordered_map>

@@ -1,4 +1,5 @@
 #pragma once
+//ImGuiクラス このクラスではデバッグメニュー関連の処理を行う
 #include "../GameObject/SceneObject.h"
 #include "../ImGui/DebugImGuiEditor.h"
 

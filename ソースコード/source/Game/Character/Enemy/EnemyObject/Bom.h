@@ -1,4 +1,5 @@
 #pragma once
+//サルエネミーが使用する爆弾クラス
 #include "../../../../Framework/GameObject/GameObject.h"
 #include "../../../../Framework/State/FunctionStateMachine.h"
 #include "../../../../Framework/Time/TimeScheduler.h"

@@ -1,4 +1,5 @@
 #pragma once
+//各種シーンの管理を行うクラス
 #include <unordered_map>
 #include <string>
 #include <memory>

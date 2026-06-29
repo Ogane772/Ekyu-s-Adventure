@@ -1,4 +1,5 @@
 #pragma once
+//ゲームパッドクラス　XInputを使用
 #include <XInput.h>
 #include "../Calculation/Vector.h"
 using namespace FrameWork;

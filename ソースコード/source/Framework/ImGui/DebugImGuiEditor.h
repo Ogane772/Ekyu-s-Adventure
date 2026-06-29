@@ -1,4 +1,5 @@
 #pragma once
+//ImGuiクラス このクラスではエディター部分(配置オブジェクトの一覧等)を行う
 #include "../GameObject/SceneObject.h"
 #include "../Calculation/Vector.h"
 #include "../ImGui/Common/imgui.h"

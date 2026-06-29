@@ -1,4 +1,5 @@
 #pragma once
+//ラインクラス　ラインによるオブジェクトの判定も行う
 #include <D3D11.h>
 #include "../Calculation/Vector.h"
 #include "../Calculation/Matrix.h"

@@ -3,6 +3,7 @@
 #include <string>
 #include <memory>
 
+//使用するテクスチャの種類
 enum class ETextureType
 {
 	TEXT_FONT,

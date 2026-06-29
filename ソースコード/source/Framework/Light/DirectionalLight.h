@@ -1,4 +1,5 @@
 #pragma once
+//ディレクショナルライトクラス
 #include "../Singleton/Singleton.h"
 #include "../Renderer/ShaderStruct.h"
 

@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 
+//使用するサウンドの種類
 enum class ESoundIndex
 {
 	FIRST_STAGE_BGM,

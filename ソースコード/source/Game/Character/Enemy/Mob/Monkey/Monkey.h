@@ -1,4 +1,5 @@
 #pragma once
+//ŽG‹›“G‚ÌƒTƒ‹ƒNƒ‰ƒX
 #include "../MobEnemy.h"
 #include "../../../../../Framework/State/FunctionStateMachine.h"
 #include "../../../../../Framework/Line/Line.h"

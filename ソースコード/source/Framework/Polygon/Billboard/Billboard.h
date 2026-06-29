@@ -1,4 +1,5 @@
 #pragma once
+//マップ上に配置されるビルボードクラス
 #include "../../GameObject/GameObject.h"
 #include "../../Renderer/ShaderStruct.h"
 class CCamera;

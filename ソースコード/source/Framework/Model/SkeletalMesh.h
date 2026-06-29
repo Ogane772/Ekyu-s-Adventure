@@ -1,4 +1,5 @@
 #pragma once
+//ボーンがあるモデルクラス
 #include <d3d11.h>
 #include <assimp/cimport.h>
 #include <assimp/scene.h>

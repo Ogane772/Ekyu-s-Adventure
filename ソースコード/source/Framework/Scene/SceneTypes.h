@@ -1,5 +1,6 @@
 #pragma once
 
+//ŠeíƒV[ƒ“‚Ìí—Ş
 enum class ESceneType
 {
 	NONE,

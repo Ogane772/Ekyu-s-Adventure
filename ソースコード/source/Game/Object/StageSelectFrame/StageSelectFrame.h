@@ -1,4 +1,5 @@
 #pragma once
+//ステージセレクトマップに使用する。ステージを表示する窓枠クラス
 #include <vector>
 #include <memory>
 #include "../../../Framework/GameObject/GameObject.h"

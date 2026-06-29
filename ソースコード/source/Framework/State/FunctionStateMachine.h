@@ -1,4 +1,5 @@
 #pragma once
+//関数単位でステートを登録できるクラス
 #include <iostream>
 #include <unordered_map>
 #include <functional>

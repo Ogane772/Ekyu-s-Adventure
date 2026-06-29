@@ -1,4 +1,5 @@
 #pragma once
+//ステート単位の親クラス
 
 template<class TOwner, class TStateType>
 class CStateBase

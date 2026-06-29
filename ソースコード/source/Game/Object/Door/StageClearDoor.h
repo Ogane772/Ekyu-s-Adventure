@@ -1,4 +1,5 @@
 #pragma once
+//ステージクリア時にインタラクトするドア
 #include "../../../Framework/GameObject/GameObject.h"
 #include <vector>
 #include <memory>

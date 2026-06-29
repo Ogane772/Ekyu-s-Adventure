@@ -1,5 +1,5 @@
 #pragma once
-
+//モデルビューモード時に使用するモデルクラス
 #include "../GameObject/GameObject.h"
 #include <assimp/scene.h>
 #include <string>

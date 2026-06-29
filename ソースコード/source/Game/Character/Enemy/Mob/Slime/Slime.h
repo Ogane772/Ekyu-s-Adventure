@@ -1,4 +1,5 @@
 #pragma once
+//雑魚敵のスライムクラス
 #include "../MobEnemy.h"
 #include <memory>
 #include "../../../../../Framework/State/FunctionStateMachine.h"

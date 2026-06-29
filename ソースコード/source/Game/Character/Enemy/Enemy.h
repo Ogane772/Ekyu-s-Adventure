@@ -1,4 +1,5 @@
 #pragma once
+//“G‚ÌeƒNƒ‰ƒX
 #include "../Character.h"
 #include "ItemDropTypes.h"
 #include <vector>

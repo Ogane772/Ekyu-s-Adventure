@@ -1,4 +1,5 @@
 #pragma once
+//ゲーム上に配置するオブジェクトの親クラス
 #include "SceneObject.h"
 #include "../Calculation/Vector.h"
 #include <vector>

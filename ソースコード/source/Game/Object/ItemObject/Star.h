@@ -1,4 +1,5 @@
 #pragma once
+//プレイヤーが拾うスタークラス
 #include <vector>
 #include "../../../Framework/GameObject/GameObject.h"
 #include "../../../Framework/State/FunctionStateMachine.h"

@@ -1,4 +1,5 @@
 #pragma once
+//ヒットストップを行うクラス
 #include "../Singleton/Singleton.h"
 #include <chrono>
 #include <unordered_map>

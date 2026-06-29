@@ -1,4 +1,5 @@
 #pragma once
+//UI“™‚Ì‰æ‘œ‚ð•\Ž¦‚·‚éƒNƒ‰ƒX
 #include <memory>
 #include "../../Renderer/ShaderStruct.h"
 #include "../../Calculation/Vector.h"

@@ -1,4 +1,5 @@
 #pragma once
+//キーボードとゲームパッドの入力を管理するクラス　ゲーム側からはこのクラスを経由して入力を取得する
 #include <windows.h>
 #include <map>
 #include <queue>

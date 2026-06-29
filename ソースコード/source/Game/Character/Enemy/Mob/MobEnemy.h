@@ -1,4 +1,5 @@
 #pragma once
+//G‹›“G‚ÌeƒNƒ‰ƒX
 #include "../Enemy.h"
 class CBox;
 

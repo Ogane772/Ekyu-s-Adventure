@@ -1,4 +1,5 @@
 #pragma once
+//メインゲームで使用するUI
 #include "../../Framework/GameObject/SceneObject.h"
 
 class C2DPolygon;

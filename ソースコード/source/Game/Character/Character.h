@@ -1,4 +1,5 @@
 #pragma once
+//キャラクターの親クラス
 #include "../../Framework/GameObject/GameObject.h"
 #include "../../Framework/Status/HP.h"
 #include "../../Framework/Model/SkeletalMesh.h"

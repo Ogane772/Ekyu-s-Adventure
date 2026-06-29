@@ -1,4 +1,5 @@
 #pragma once
+//ステートマシンの親クラス
 #include <memory>
 #include <unordered_map>
 #include "StateBase.h"

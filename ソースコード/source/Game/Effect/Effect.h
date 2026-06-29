@@ -1,4 +1,5 @@
 #pragma once
+//エフェクトクラス
 #include <d3d11.h>
 #include <memory>
 #include "EffectTypes.h"

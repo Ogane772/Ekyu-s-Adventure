@@ -1,4 +1,5 @@
 #pragma once
+//エフェクトを管理するクラス
 #include "../../Framework/GameObject/SceneObject.h"
 #include "../../Framework/Calculation/Vector.h"
 #include <unordered_map>

@@ -1,4 +1,5 @@
 #pragma once
+//モデルビューモードのImGuiクラス　モデルの位置、大きさやアニメーションの設定を行える
 #include "../GameObject/SceneObject.h"
 
 class CModelViewImGui : public CSceneObject

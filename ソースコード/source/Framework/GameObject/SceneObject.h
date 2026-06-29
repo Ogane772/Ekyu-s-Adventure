@@ -1,4 +1,5 @@
 #pragma once
+//ゲーム上に配置する必要のないオブジェクトの親クラス(UI等)
 #include <Windows.h>
 #include <memory>
 #include <string>
@@ -29,6 +30,8 @@ public:
 	//エディタモード中のオブジェクト削除処理
 	virtual void SetDestroyEdit() { m_IsDestroy = true; }
 	bool Destroy();
+
+	//サウンドの再生、停止、削除
 	UINT PlaySoundIndex(const ESoundIndex SoundIndex);
 	void PlaySoundID(const UINT Id);
 	void StopSoundIndex(const ESoundIndex SoundIndex);

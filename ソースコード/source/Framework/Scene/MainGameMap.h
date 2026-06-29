@@ -1,4 +1,5 @@
 #pragma once
+//チュートリアル、1面、2面といったゲーム部分のマップクラス
 #include "../Scene/Scene.h"
 class CImGui;
 

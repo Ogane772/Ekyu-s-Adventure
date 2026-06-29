@@ -1,5 +1,5 @@
 # pragma once
-
+//各種シングルトンの親クラス
 # include <cassert>
 # include <mutex>
 #include<memory>

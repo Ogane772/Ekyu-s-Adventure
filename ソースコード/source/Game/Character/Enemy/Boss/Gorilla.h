@@ -1,4 +1,5 @@
 #pragma once
+//ボスエネミークラス
 #include "../Enemy.h"
 #include "../../../../Framework/State/FunctionStateMachine.h"
 #include "../../../../Framework/Time/TimeScheduler.h"

@@ -1,4 +1,5 @@
 #pragma once
+//プレイヤーが拾うハートクラス
 #include "../../../Framework/GameObject/GameObject.h"
 #include "../../../Framework/State/FunctionStateMachine.h"
 

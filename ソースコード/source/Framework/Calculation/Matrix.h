@@ -1,9 +1,8 @@
 #pragma once
+//行列計算用のクラス　計算にEigenを使用
 #include <Eigen/Geometry>
 #include <DirectXMath.h>
-
 #include "Vector.h"
-
 using namespace DirectX;
 
 namespace FrameWork

@@ -1,5 +1,6 @@
 #pragma once
 
+//ロードするモデルの種類を定義
 enum class EStaticMeshType
 {
 	BOX,

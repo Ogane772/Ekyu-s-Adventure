@@ -1,4 +1,5 @@
 #pragma once
+//ボス戦に使用するシーン。オブジェクト数が少ないため処理上でオブジェクトの配置を行う
 #include "../Scene/Scene.h"
 class CImGui;
 

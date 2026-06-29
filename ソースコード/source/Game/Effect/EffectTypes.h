@@ -3,6 +3,7 @@
 using namespace FrameWork;
 enum class ETextureType;
 
+//エフェクトの種類
 enum class EEffectType
 {
 	ACORN,

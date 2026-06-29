@@ -1,4 +1,5 @@
 #pragma once
+//ウィンドウのサイズやポーズで設定する値等の設定クラス
 #include <d3d11.h>
 #include <string>
 #include <unordered_map>

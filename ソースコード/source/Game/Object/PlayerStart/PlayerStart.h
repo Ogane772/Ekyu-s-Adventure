@@ -1,4 +1,5 @@
 #pragma once
+//配置時にプレイヤーのスタート位置にするクラス
 #include "../../../Framework/GameObject/GameObject.h"
 class CStaticMesh;
 class CSphere;

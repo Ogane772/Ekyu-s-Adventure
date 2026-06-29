@@ -1,4 +1,5 @@
 #pragma once
+//敵が落とすアイテムの種類
 enum class EItemDropType
 {
 	NO_ITEM,
@@ -6,7 +7,7 @@ enum class EItemDropType
 	HEART,
 	STAR,
 };
-
+//敵が落とすアイテムのパラメータ
 struct ItemDropData
 {
 	EItemDropType ItemDropType;

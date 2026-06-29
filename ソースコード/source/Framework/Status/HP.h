@@ -1,4 +1,5 @@
 #pragma once
+//プレイヤー等の体力クラス
 
 class HP
 {

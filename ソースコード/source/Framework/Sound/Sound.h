@@ -1,4 +1,5 @@
 #pragma once
+//サウンドクラス
 #include <xaudio2.h>
 #include <x3daudio.h>
 #include "../Calculation/Vector.h"

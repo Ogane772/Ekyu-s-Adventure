@@ -1,8 +1,8 @@
 #pragma once
+//あるオブジェクトに当たったら壊れるブロッククラス
 #include "../../../Framework/GameObject/GameObject.h"
 #include <memory>
 
-//あるオブジェクトに当たったら壊れるブロッククラス
 class CCommonObject;
 class CBox;
 
