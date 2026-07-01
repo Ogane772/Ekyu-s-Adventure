@@ -1045,8 +1045,7 @@ void CStaticMesh::CreateCollisionMesh()
 		return;
 	}
 	m_CollisionMeshList.clear();
-	//コリジョンメッシュに頂点情報と法線を格納する
-	float maxRad = 0.0f;	
+	//コリジョンメッシュに頂点情報と法線を格納する	
 	for (unsigned int j = 0; j < m_Mesh->MeshNum; j++)
 	{
 		const int size = static_cast<int>(m_Mesh->TriangleList[j].size()) / 3;
@@ -1057,17 +1056,6 @@ void CStaticMesh::CreateCollisionMesh()
 			face.Point[0] = m_Mesh->TriangleList[j][v];
 			face.Point[1] = m_Mesh->TriangleList[j][v + 1];
 			face.Point[2] = m_Mesh->TriangleList[j][v + 2];
-
-			// このメッシュの最大の大きさを調べる
-			if (face.Point[0].x > maxRad) maxRad = face.Point[0].x;
-			if (face.Point[0].y > maxRad) maxRad = face.Point[0].y;
-			if (face.Point[0].z > maxRad) maxRad = face.Point[0].z;
-			if (face.Point[1].x > maxRad) maxRad = face.Point[1].x;
-			if (face.Point[1].y > maxRad) maxRad = face.Point[1].y;
-			if (face.Point[1].z > maxRad) maxRad = face.Point[1].z;
-			if (face.Point[2].x > maxRad) maxRad = face.Point[2].x;
-			if (face.Point[2].y > maxRad) maxRad = face.Point[2].y;
-			if (face.Point[2].z > maxRad) maxRad = face.Point[2].z;
 
 			const Vector3 vecAB = face.Point[1] - face.Point[0];
 			const Vector3 vecBC = face.Point[2] - face.Point[1];
